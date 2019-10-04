@@ -63,5 +63,21 @@ public class PosAvg {
 				}
 				this.stidList = expand;
 			}
-
+	
+	public int indexOfStation() {
+		int result = 1;
+		for(int i = 0; i < placement; ++i) {
+			if (stidList[i] == stid) {
+				break;
+			}
+			else ++result;
+		}
+		return result;
+	}
+	
+	public String toString() {
+		int index = indexOfStation();
+		return String.format("This index is average of %s and %s, %s and %s, and so on",
+				stidList[index-1],stidList[index+1],stidList[index-2],stidList[index+2]);
+	}
 }
