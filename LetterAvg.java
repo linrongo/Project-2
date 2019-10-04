@@ -14,16 +14,16 @@ public class LetterAvg extends PosAvg{
 		int count = 0;
 		for (int i = 0; i < placement; ++i) {
 			if(stidList[i].charAt(0)==letter) {
-				sameFirstLetterList += stidList[i] + " \n";
+				sameFirstLetterList += "\n" + stidList[i];
 				++count;
 			}
 		}
 		return count;
 	}
-@Override
+
 public String toString() {
 	
-	return "They are: \n" + sameFirstLetterList;
+	return "\nThey are:" + sameFirstLetterList;
 }
 	
 
