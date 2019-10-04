@@ -5,8 +5,8 @@ import java.io.FileReader;
 public class PosAvg {	
 	
 	private int capacity;
-	private int placement;
-	private String[] stidList;
+	protected int placement;
+	protected String[] stidList;
 	private String stid;
 	
 	public PosAvg(String stid) throws IOException {
@@ -17,7 +17,15 @@ public class PosAvg {
 		readFile();
 	}
 	
-	private void readFile() throws IOException {
+	public PosAvg(char stid2) throws IOException {
+		capacity = 1;
+		placement = 0;
+		stidList = new String[capacity];
+		readFile();
+	}
+		
+
+	protected void readFile() throws IOException {
 			BufferedReader profile = new BufferedReader(new FileReader("Mesonet.txt"));
 	       	String line;
 	       	String stid;
