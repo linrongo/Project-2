@@ -50,7 +50,7 @@ public class PosAvg {
 		       	}
 		      line = profile.readLine();
 	       }    
-	   profile.close();         
+	  
 		}
 		
 	private void expandList() {
@@ -65,19 +65,18 @@ public class PosAvg {
 			}
 	
 	public int indexOfStation() {
-		int result = 1;
-		for(int i = 0; i < placement; ++i) {
-			if (stidList[i] == stid) {
+		int result;
+		for (result = 0; result < placement; ++result) {
+			if (stidList[result].equals(stid)) {
 				break;
-			}
-			else ++result;
-		}
-		return result;
+			}			  
+		}		
+		return result + 1;
 	}
 	
 	public String toString() {
-		int index = indexOfStation();
-		return String.format("This index is average of %s and %s, %s and %s, and so on",
+		int index = indexOfStation() - 1;
+		return String.format("This index is average of %s and %s, %s and %s, and so on.",
 				stidList[index-1],stidList[index+1],stidList[index-2],stidList[index+2]);
 	}
 }
