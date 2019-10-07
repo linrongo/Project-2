@@ -1,6 +1,6 @@
 # 'PROJECT 2'-linrongo
 	
-1. MesoInherit - implement and mthods from MesoAbstract
+1. MesoInherit - implement methods from MesoAbstract
 	a. calAverage - convert all character inside the stID string into Ascill value and add them together, then divide by 4 to get average.
 	b. celing, floor and chose between the two with condition provided and make an int[] for thse 3 values.
 	c. letter Average - get the 3rd value in the calAverage array and convert that back to char.
