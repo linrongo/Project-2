@@ -11,5 +11,6 @@
 	c. toString -  get the position of the stid by indexOfStation, minus one because array start at 0 not 1, then put use string format and call for the stid that are 1 to 2 station away from the input stid.
 
 3. LetterAvg - extend from PosAvg so it share the stidList
-	a. numberOfStationWithLetterAvg - gothrough the list and find all stid started with the same letter, everytime it was found, add that stid to the list, increase count by 1 and return count at the end.
-	b. return the list of stid according to tha format provided.
+	a. numberOfStationWithLetterAvg - go through the list and find all stid started with the same letter, everytime it was found increase count by 1 and return count at the end.
+	b. getStationsWithSameLetter - gothrough the list and find all stid started with the same letter, and add it to the list.
+	c. return the list of stid according to tha format provided.
