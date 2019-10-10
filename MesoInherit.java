@@ -3,8 +3,9 @@ public class MesoInherit extends MesoAbstract{
 		
 	private String stid;
 	//constructor
-	public MesoInherit(MesoStation meso) {
-		this.stid = meso.getStID();
+	
+	MesoInherit(MesoStation meso){
+	this.stid = meso.getStID();
 	}
 	@Override
 	public int[] calAverage() {
