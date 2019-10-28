@@ -74,6 +74,7 @@ public class PosAvg {
 	
 	public int indexOfStation() {
 		int result;
+	// get index of the Station
 		for (result = 0; result < placement; ++result) {
 			if (stidList[result].equals(stid)) {
 				break;
