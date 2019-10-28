@@ -58,7 +58,7 @@ public class PosAvg {
 		       	}
 		      line = profile.readLine();
 	       }    
-	  
+		    profile.close();
 		}
 		
 	private void expandList() {
